@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<ul>
+		{% for cita in citas %}
+			<li>{{cita.fecha|date('D-Y-m-d')}}
+				a las
+				<a href="reserva/{{cita.id}}">{{cita.hora|date('H:i')}}</a>
+			</li>
+		{% endfor %}
+
+	</ul>
+	<br>
+    <a class="btn btn-primary" href="/familia/{{servicio}}">Volver a {{servicio}}</a> 
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Familia{% endblock %}
+
+{% block body %}
+<div id="familyBody">
+    <div id="containerCards" class="container">
+        <div id="cardfamily1" class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <a href="{{path('showTutores')}}" class="icon">
+                        <img aria-hidden="true" style="width:300px;"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <a href="{{path('showTutores')}}" class="content">
+                    <h3>Tutoría</h3>
+                </a>
+            </div>
+        </div>
+        <div id="cardfamily2" class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <a href="{{path('showSecretaria')}}" class="icon">
+                        <img aria-hidden="true" style="width:300px;"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <a href="{{path('showSecretaria')}}" class="content">
+                    <h3>Secretaría</h3>
+                </a>
+            </div>
+        </div>
+        <div id="cardfamily3" class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <a href="{{path('showOrientacion')}}" class="icon">
+                        <img aria-hidden="true" style="width:300px;"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <a href="{{path('showOrientacion')}}" class="content">
+                    <h3>Orientación</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

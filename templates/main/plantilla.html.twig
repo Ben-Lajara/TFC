@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Plantilla{% endblock %}
+
+{% block body %}
+
+<div id="familyBody">
+    <div id="containerCards" class="container">
+        <div id="cardfamily1" class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <a href="{{path('aniadir_citas')}}" class="icon">
+                        <img aria-hidden="true" style="width:300px;"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <a href="{{path('aniadir_citas')}}" class="content">
+                    <h3>Añadir una cita</h3>
+                </a>
+            </div>
+        </div>
+        <div id="cardfamily2" class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <a href="{{path('misCitas')}}" class="icon">
+                        <img aria-hidden="true" style="width:300px;"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <a href="{{path('misCitas')}}" class="content">
+                    <h3>Mis citas</h3>
+                </a>
+            </div>
+        </div>
+        <div id="cardfamily3" class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <a href="{{path('addUser')}}" class="icon">
+                        <img aria-hidden="true" style="width:300px;"></img>
+                    </a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <a href="{{path('addUser')}}" class="content">
+                    <h3>Añadir un usuario admin</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

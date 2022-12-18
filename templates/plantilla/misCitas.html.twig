@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mis citas{% endblock %}
+
+{% block body %}
+    <table id="tablaCita" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+					<th>Fecha de inicio</th>
+					<th>Hora de inicio</th>
+					<th>Fecha de fin</th>
+					<th>Hora de fin</th>
+					<th>Servicio</th>
+					<th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for reserva in reservas %}
+                <tr>
+                    <td>{{ reserva.Username}}</td>
+					<td>{{ reserva.calendar.start|date('d-m-Y')}}</td>
+					<td>{{ reserva.calendar.start|date('H:i:s')}}</td>
+					<td>{{ reserva.calendar.end|date('d-m-Y')}}</td>
+					<td>{{ reserva.calendar.end|date('H:i:s')}}</td>
+					<td>{{ reserva.calendar.servicios.Nombre}}</td>
+					<td><a href="/anular/{{reserva.id}}" class="btn btn-danger">Anular</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <a id="buttonReturn" href="/plantilla" class="btn btn-primary">⏪</a>
+{% endblock %}

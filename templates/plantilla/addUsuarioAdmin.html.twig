@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Plantilla{% endblock %}
+
+{% block body %}
+<div id="addAdmin">
+    {# {{form(form)}} #}
+    {{ form_start(form) }}
+        {{ form_row(form.username) }}
+        {{ form_row(form.password) }}
+        <select id="selectServicios" name="selectServicios">
+            {% for servicio in servicios %}
+                <option value="{{servicio.Nombre}}">{{servicio.Nombre}}</option>
+            {% endfor %}
+        </select>
+        {{ form_row(form.enviar) }}
+    {{ form_end(form) }}
+</div>
+{% endblock %}
