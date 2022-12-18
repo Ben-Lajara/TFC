@@ -20,6 +20,7 @@ return [
         '/' => [[['_route' => 'main', '_controller' => 'App\\Controller\\MainController::index'], null, null, null, false, false, null]],
         '/plantilla' => [[['_route' => 'plantilla', '_controller' => 'App\\Controller\\MainController::indexPlantilla'], null, null, null, false, false, null]],
         '/familia' => [[['_route' => 'familia', '_controller' => 'App\\Controller\\MainController::indexFamilia'], null, null, null, false, false, null]],
+        '/licencias' => [[['_route' => 'licencias', '_controller' => 'App\\Controller\\MainController::licencias'], null, null, null, false, false, null]],
         '/añadir_citas' => [[['_route' => 'aniadir_citas', '_controller' => 'App\\Controller\\PlantillaController::addCitas'], null, null, null, false, false, null]],
         '/miscitas' => [[['_route' => 'misCitas', '_controller' => 'App\\Controller\\PlantillaController::misCitas'], null, null, null, false, false, null]],
         '/addUser' => [[['_route' => 'addUser', '_controller' => 'App\\Controller\\PlantillaController::addAdminUser'], null, null, null, false, false, null]],

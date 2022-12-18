@@ -26,6 +26,7 @@ return [
     'main' => [[], ['_controller' => 'App\\Controller\\MainController::index'], [], [['text', '/']], [], [], []],
     'plantilla' => [[], ['_controller' => 'App\\Controller\\MainController::indexPlantilla'], [], [['text', '/plantilla']], [], [], []],
     'familia' => [[], ['_controller' => 'App\\Controller\\MainController::indexFamilia'], [], [['text', '/familia']], [], [], []],
+    'licencias' => [[], ['_controller' => 'App\\Controller\\MainController::licencias'], [], [['text', '/licencias']], [], [], []],
     'aniadir_citas' => [[], ['_controller' => 'App\\Controller\\PlantillaController::addCitas'], [], [['text', '/añadir_citas']], [], [], []],
     'misCitas' => [[], ['_controller' => 'App\\Controller\\PlantillaController::misCitas'], [], [['text', '/miscitas']], [], [], []],
     'addUser' => [[], ['_controller' => 'App\\Controller\\PlantillaController::addAdminUser'], [], [['text', '/addUser']], [], [], []],

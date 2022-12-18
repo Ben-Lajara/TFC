@@ -28,4 +28,10 @@ class MainController extends AbstractController
     {
         return $this->render('main/familia.html.twig');
     }
+
+    #[Route('/licencias', name: 'licencias')]
+    public function licencias(): Response
+    {
+        return $this->render('main/licencias.html.twig');
+    }
 }
