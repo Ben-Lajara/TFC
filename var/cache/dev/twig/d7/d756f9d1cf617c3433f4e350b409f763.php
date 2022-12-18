@@ -65,7 +65,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Plantilla";
+        echo "Personal";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -178,7 +178,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Plantilla{% endblock %}
+{% block title %}Personal{% endblock %}
 
 {% block body %}
 

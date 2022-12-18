@@ -97,33 +97,35 @@ class __TwigTemplate_74faf424a9b8d502d1c18ec52166d197 extends Template
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 20, $this->source); })()), 'form_start');
         echo "
             <label for=\"tutor\">Elige: </label><br>
-            <select id=\"selectTutores\" name=\"selectTutores\">
-                ";
-        // line 23
+            <div class=\"form-group col-sm-3\">
+                <select class=\"form-select\" id=\"selectTutores\" name=\"selectTutores\">
+                    ";
+        // line 24
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["tutores"]) || array_key_exists("tutores", $context) ? $context["tutores"] : (function () { throw new RuntimeError('Variable "tutores" does not exist.', 23, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["tutores"]) || array_key_exists("tutores", $context) ? $context["tutores"] : (function () { throw new RuntimeError('Variable "tutores" does not exist.', 24, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["tutor"]) {
-            // line 24
-            echo "                    <option value=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tutor"], "id", [], "any", false, false, false, 24), "html", null, true);
+            // line 25
+            echo "                        <option value=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tutor"], "id", [], "any", false, false, false, 25), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tutor"], "username", [], "any", false, false, false, 24), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["tutor"], "username", [], "any", false, false, false, 25), "html", null, true);
             echo "</option>
-                ";
+                    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tutor'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 25
+        // line 26
         echo " 
-            </select>
+                </select>
+            </div><br>
             ";
-        // line 27
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 27, $this->source); })()), "Elegir", [], "any", false, false, false, 27), 'row');
+        // line 29
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 29, $this->source); })()), "Elegir", [], "any", false, false, false, 29), 'row');
         echo "
         ";
-        // line 28
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 28, $this->source); })()), 'form_end');
+        // line 30
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 30, $this->source); })()), 'form_end');
         echo "
         </div>
     </div>
@@ -150,7 +152,7 @@ class __TwigTemplate_74faf424a9b8d502d1c18ec52166d197 extends Template
 
     public function getDebugInfo()
     {
-        return array (  126 => 28,  122 => 27,  118 => 25,  107 => 24,  103 => 23,  97 => 20,  94 => 19,  91 => 17,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  128 => 30,  124 => 29,  119 => 26,  108 => 25,  104 => 24,  97 => 20,  94 => 19,  91 => 17,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -176,11 +178,13 @@ class __TwigTemplate_74faf424a9b8d502d1c18ec52166d197 extends Template
         <div class=\"container\">
         {{ form_start(form) }}
             <label for=\"tutor\">Elige: </label><br>
-            <select id=\"selectTutores\" name=\"selectTutores\">
-                {% for tutor in tutores %}
-                    <option value=\"{{tutor.id}}\">{{tutor.username}}</option>
-                {% endfor %} 
-            </select>
+            <div class=\"form-group col-sm-3\">
+                <select class=\"form-select\" id=\"selectTutores\" name=\"selectTutores\">
+                    {% for tutor in tutores %}
+                        <option value=\"{{tutor.id}}\">{{tutor.username}}</option>
+                    {% endfor %} 
+                </select>
+            </div><br>
             {{ form_row(form.Elegir) }}
         {{ form_end(form) }}
         </div>

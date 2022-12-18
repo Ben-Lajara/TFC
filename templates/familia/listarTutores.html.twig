@@ -19,11 +19,13 @@
         <div class="container">
         {{ form_start(form) }}
             <label for="tutor">Elige: </label><br>
-            <select id="selectTutores" name="selectTutores">
-                {% for tutor in tutores %}
-                    <option value="{{tutor.id}}">{{tutor.username}}</option>
-                {% endfor %} 
-            </select>
+            <div class="form-group col-sm-3">
+                <select class="form-select" id="selectTutores" name="selectTutores">
+                    {% for tutor in tutores %}
+                        <option value="{{tutor.id}}">{{tutor.username}}</option>
+                    {% endfor %} 
+                </select>
+            </div><br>
             {{ form_row(form.Elegir) }}
         {{ form_end(form) }}
         </div>

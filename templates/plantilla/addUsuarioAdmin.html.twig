@@ -14,11 +14,15 @@
     <div class="form-group col-sm-3">
         {{ form_row(form.password) }}
     </div>
-        <select id="selectServicios" name="selectServicios">
+
+    <label for="selectServicios">Servicio</label>
+    <div class="form-group col-sm-3">
+        <select class="form-select" id="selectServicios" name="selectServicios">
             {% for servicio in servicios %}
                 <option value="{{servicio.Nombre}}">{{servicio.Nombre}}</option>
             {% endfor %}
         </select>
+    </div>
         {{ form_row(form.enviar) }}
     {{ form_end(form) }}
 </div>
