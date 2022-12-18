@@ -4,9 +4,10 @@ html{
 }
 
 /* AÑADIR CITAS */
-/* #aniadirCitas{
+#aniadirCitas{
+	margin: 10px;
 	height: calc(100vh - 24.045407636738908vh);
-} */
+}
 
 /* AÑADIR ADMIN */
 #addAdmin{

@@ -3,7 +3,28 @@
 {% block title %}Nueva disponibilidad{% endblock %}
 
 {% block body %}
-<div id="aniadirCitas">
-    {{form(form)}}
-<div>
+<div class="container">
+    <h1>Publica tu disponibilidad</h1>
+    {# {{form(form)}} #}
+    {{ form_start(form) }}
+    <div class="form-group col-sm-3">
+        {{ form_row(form.title) }}
+    </div>
+
+    <div class="form-group col-sm-3">
+        {{ form_row(form.start) }}
+    </div>
+
+    <div class="form-group col-sm-3">
+        {{ form_row(form.end) }}
+    </div>
+
+    <div class="form-group col-sm-3">
+        {{ form_row(form.description) }}
+    </div>
+        
+        {{ form_row(form.submit) }}
+    {{ form_end(form) }}
+
+</div>
 {% endblock %}
