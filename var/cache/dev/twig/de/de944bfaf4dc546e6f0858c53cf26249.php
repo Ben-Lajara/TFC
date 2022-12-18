@@ -65,7 +65,7 @@ class __TwigTemplate_7ccd5c5034eb5b7007d272bd1ee5cf53 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Plantilla";
+        echo "Nueva disponibilidad";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -119,13 +119,13 @@ class __TwigTemplate_7ccd5c5034eb5b7007d272bd1ee5cf53 extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Plantilla{% endblock %}
+{% block title %}Nueva disponibilidad{% endblock %}
 
 {% block body %}
 <div id=\"aniadirCitas\">
     {{form(form)}}
 <div>
 {% endblock %}
-", "plantilla/formularioCita.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC-2469911dfba64533f7d3e3b79dc3f11bb4a2d310\\templates\\plantilla\\formularioCita.html.twig");
+", "plantilla/formularioCita.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC\\templates\\plantilla\\formularioCita.html.twig");
     }
 }

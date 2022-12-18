@@ -104,7 +104,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
         // line 18
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("aniadir_citas");
         echo "\" class=\"content\">
-                    <h3>Añadir una cita</h3>
+                    <h3>Publicar disponibilidad</h3>
                 </a>
             </div>
         </div>
@@ -144,7 +144,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
         // line 46
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("addUser");
         echo "\" class=\"content\">
-                    <h3>Añadir un usuario admin</h3>
+                    <h3>Añadir usuario admin</h3>
                 </a>
             </div>
         </div>
@@ -194,7 +194,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
             </div>
             <div class=\"slide slide2\">
                 <a href=\"{{path('aniadir_citas')}}\" class=\"content\">
-                    <h3>Añadir una cita</h3>
+                    <h3>Publicar disponibilidad</h3>
                 </a>
             </div>
         </div>
@@ -222,12 +222,12 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
             </div>
             <div class=\"slide slide2\">
                 <a href=\"{{path('addUser')}}\" class=\"content\">
-                    <h3>Añadir un usuario admin</h3>
+                    <h3>Añadir usuario admin</h3>
                 </a>
             </div>
         </div>
     </div>
 </div>
-{% endblock %}", "main/plantilla.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC-2469911dfba64533f7d3e3b79dc3f11bb4a2d310\\templates\\main\\plantilla.html.twig");
+{% endblock %}", "main/plantilla.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC\\templates\\main\\plantilla.html.twig");
     }
 }
