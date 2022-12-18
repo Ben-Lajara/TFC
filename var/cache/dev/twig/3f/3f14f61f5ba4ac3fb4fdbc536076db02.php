@@ -202,6 +202,6 @@ class __TwigTemplate_b5bf02f3b38155dbef71aaf6618cfbe2 extends Template
         </table>
         <a id=\"buttonReturn\" href=\"/plantilla\" class=\"btn btn-primary\">⏪</a>
 {% endblock %}
-", "plantilla/misCitas.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC-2469911dfba64533f7d3e3b79dc3f11bb4a2d310\\templates\\plantilla\\misCitas.html.twig");
+", "plantilla/misCitas.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC\\templates\\plantilla\\misCitas.html.twig");
     }
 }

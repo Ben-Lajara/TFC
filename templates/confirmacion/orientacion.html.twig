@@ -1,6 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Orientación{% endblock %}
+<div class="container" id="exito">
+    La cita {{event.title}} se ha reservado para {{event.start|date("d/m/Y")}} a las {{event.start|date("H:i:s")}} hasta {{event.end|date("d/m/Y")}} a las {{event.end|date("H:i:s")}}
+</div>
 
 {% block body %}
 {% endblock %}

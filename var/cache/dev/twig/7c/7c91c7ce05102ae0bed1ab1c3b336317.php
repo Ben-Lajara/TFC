@@ -258,12 +258,13 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
         echo "\">Licencias del proyecto</a>
                     </p>
 
-                    <p class=\"footer-company-name\">© 2022 Eduonix Learning Solutions Pvt. Ltd.</p>
-                </div>
+                    ";
+        // line 65
+        echo "                </div>
                 <div class=\"footer-center\">
                     <div>
                         <i class=\"fa fa-phone\"></i>
-                        <p>+91 22-27782183</p>
+                        <p>968 83 46 05</p>
                     </div>
                     <div>
                         <i class=\"fa fa-envelope\"></i>
@@ -322,7 +323,7 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  301 => 87,  291 => 86,  257 => 61,  252 => 58,  242 => 57,  232 => 55,  222 => 54,  208 => 48,  203 => 46,  198 => 45,  192 => 43,  186 => 41,  183 => 40,  181 => 39,  169 => 29,  159 => 28,  138 => 14,  128 => 13,  109 => 6,  96 => 91,  94 => 86,  91 => 85,  89 => 57,  86 => 56,  84 => 54,  81 => 53,  79 => 28,  75 => 26,  73 => 13,  70 => 12,  67 => 11,  64 => 10,  61 => 9,  56 => 6,  49 => 1,);
+        return array (  302 => 87,  292 => 86,  263 => 65,  257 => 61,  252 => 58,  242 => 57,  232 => 55,  222 => 54,  208 => 48,  203 => 46,  198 => 45,  192 => 43,  186 => 41,  183 => 40,  181 => 39,  169 => 29,  159 => 28,  138 => 14,  128 => 13,  109 => 6,  96 => 91,  94 => 86,  91 => 85,  89 => 57,  86 => 56,  84 => 54,  81 => 53,  79 => 28,  75 => 26,  73 => 13,  70 => 12,  67 => 11,  64 => 10,  61 => 9,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -390,12 +391,12 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
                         <a href=\"{{path('licencias')}}\">Licencias del proyecto</a>
                     </p>
 
-                    <p class=\"footer-company-name\">© 2022 Eduonix Learning Solutions Pvt. Ltd.</p>
+                    {# <p class=\"footer-company-name\">© 2022 Eduonix Learning Solutions Pvt. Ltd.</p> #}
                 </div>
                 <div class=\"footer-center\">
                     <div>
                         <i class=\"fa fa-phone\"></i>
-                        <p>+91 22-27782183</p>
+                        <p>968 83 46 05</p>
                     </div>
                     <div>
                         <i class=\"fa fa-envelope\"></i>

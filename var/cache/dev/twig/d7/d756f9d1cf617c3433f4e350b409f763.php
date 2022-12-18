@@ -88,7 +88,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
         echo "
 <div id=\"familyBody\">
     <div id=\"containerCards\" class=\"container\">
-        <div id=\"cardfamily1\" class=\"card\">
+        <div id=\"cardWorkers1\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"";
@@ -108,7 +108,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
                 </a>
             </div>
         </div>
-        <div id=\"cardfamily2\" class=\"card\">
+        <div id=\"cardWorkers2\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"";
@@ -128,7 +128,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
                 </a>
             </div>
         </div>
-        <div id=\"cardfamily3\" class=\"card\">
+        <div id=\"cardWorkers3\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"";
@@ -184,7 +184,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
 
 <div id=\"familyBody\">
     <div id=\"containerCards\" class=\"container\">
-        <div id=\"cardfamily1\" class=\"card\">
+        <div id=\"cardWorkers1\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"{{path('aniadir_citas')}}\" class=\"icon\">
@@ -198,7 +198,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
                 </a>
             </div>
         </div>
-        <div id=\"cardfamily2\" class=\"card\">
+        <div id=\"cardWorkers2\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"{{path('misCitas')}}\" class=\"icon\">
@@ -212,7 +212,7 @@ class __TwigTemplate_04cf4bc224bf4759124d7c9f5b05cb57 extends Template
                 </a>
             </div>
         </div>
-        <div id=\"cardfamily3\" class=\"card\">
+        <div id=\"cardWorkers3\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"{{path('addUser')}}\" class=\"icon\">

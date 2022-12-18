@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Main{% endblock %}
+{% block title %}Planifica{% endblock %}
 
 {% block body %}
 <div id="mainbodyBlock">
     <div id="containerCards" class="container">
-        <div id="cardfamily1" class="card">
+        <div id="cardfamilyMain" class="card">
             <div class="slide slide1">
                 <div class="content">
                     <a href="{{path('familia')}}" class="icon">
@@ -19,7 +19,7 @@
                 </a>
             </div>
         </div>
-        <div id="cardfamily2" class="card">
+        <div id="cardWorkersMain" class="card">
             <div class="slide slide1">
                 <div class="content">
                     <a href="{{path('plantilla')}}" class="icon">

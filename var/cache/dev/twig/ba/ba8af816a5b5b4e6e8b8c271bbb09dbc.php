@@ -65,7 +65,7 @@ class __TwigTemplate_1a58522c3ba11f394fd9ab15f583fcbf extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Main";
+        echo "Planifica";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -87,7 +87,7 @@ class __TwigTemplate_1a58522c3ba11f394fd9ab15f583fcbf extends Template
         // line 6
         echo "<div id=\"mainbodyBlock\">
     <div id=\"containerCards\" class=\"container\">
-        <div id=\"cardfamily1\" class=\"card\">
+        <div id=\"cardfamilyMain\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"";
@@ -107,7 +107,7 @@ class __TwigTemplate_1a58522c3ba11f394fd9ab15f583fcbf extends Template
                 </a>
             </div>
         </div>
-        <div id=\"cardfamily2\" class=\"card\">
+        <div id=\"cardWorkersMain\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"";
@@ -157,12 +157,12 @@ class __TwigTemplate_1a58522c3ba11f394fd9ab15f583fcbf extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Main{% endblock %}
+{% block title %}Planifica{% endblock %}
 
 {% block body %}
 <div id=\"mainbodyBlock\">
     <div id=\"containerCards\" class=\"container\">
-        <div id=\"cardfamily1\" class=\"card\">
+        <div id=\"cardfamilyMain\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"{{path('familia')}}\" class=\"icon\">
@@ -176,7 +176,7 @@ class __TwigTemplate_1a58522c3ba11f394fd9ab15f583fcbf extends Template
                 </a>
             </div>
         </div>
-        <div id=\"cardfamily2\" class=\"card\">
+        <div id=\"cardWorkersMain\" class=\"card\">
             <div class=\"slide slide1\">
                 <div class=\"content\">
                     <a href=\"{{path('plantilla')}}\" class=\"icon\">
