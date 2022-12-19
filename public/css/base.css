@@ -212,8 +212,15 @@ footer{
 	width: 30%;
 }
 
+.footer-distributed .footer-right img{
+	margin-top: 2px;
+	width: 13%;
+	height: 13%;
+}
+
 .footer-distributed .footer-right p{
 	color: #ffffff;
+	font-size: 14px;
 }
 
 .footer-distributed .footer-right p a{
