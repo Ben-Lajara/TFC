@@ -88,7 +88,7 @@ class __TwigTemplate_b5bf02f3b38155dbef71aaf6618cfbe2 extends Template
         echo "    <table id=\"tablaCita\" class=\"table table-striped\">
             <thead>
                 <tr>
-                    <th>Usuario</th>
+                    <th>Atiende a</th>
 \t\t\t\t\t<th>Fecha de inicio</th>
 \t\t\t\t\t<th>Hora de inicio</th>
 \t\t\t\t\t<th>Fecha de fin</th>
@@ -177,7 +177,7 @@ class __TwigTemplate_b5bf02f3b38155dbef71aaf6618cfbe2 extends Template
     <table id=\"tablaCita\" class=\"table table-striped\">
             <thead>
                 <tr>
-                    <th>Usuario</th>
+                    <th>Atiende a</th>
 \t\t\t\t\t<th>Fecha de inicio</th>
 \t\t\t\t\t<th>Hora de inicio</th>
 \t\t\t\t\t<th>Fecha de fin</th>

@@ -11,7 +11,7 @@
 				<table class="table table-striped">
 					<thead>
 						<tr>
-							<th>Tutor</th>
+							<th>Le atiende</th>
 							<th>Fecha de inicio</th>
 							<th>Hora de inicio</th>
 							<th>Fecha de fin</th>
@@ -31,7 +31,7 @@
 										<td>{{ reserva.calendar.end|date('d-m-Y')}}</td>
 										<td>{{ reserva.calendar.end|date('H:i:s')}}</td>
 										<td>{{ reserva.calendar.servicios.Nombre}}</td>
-										<td><a href="/anular/{{reserva.id}}" class="btn btn-primary">Anular</a></td>
+										<td><a href="/anular/{{reserva.id}}" class="btn btn-danger">Anular</a></td>
 									<tr>
 								{% endif %}
 						{% endfor %}

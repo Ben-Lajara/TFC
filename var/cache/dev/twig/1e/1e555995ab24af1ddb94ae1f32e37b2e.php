@@ -98,7 +98,7 @@ class __TwigTemplate_1e23fe5133df7ed6f820dc9c093b72d0 extends Template
             echo "\t\t\t\t<table class=\"table table-striped\">
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t<th>Tutor</th>
+\t\t\t\t\t\t\t<th>Le atiende</th>
 \t\t\t\t\t\t\t<th>Fecha de inicio</th>
 \t\t\t\t\t\t\t<th>Hora de inicio</th>
 \t\t\t\t\t\t\t<th>Fecha de fin</th>
@@ -147,7 +147,7 @@ class __TwigTemplate_1e23fe5133df7ed6f820dc9c093b72d0 extends Template
 \t\t\t\t\t\t\t\t\t\t<td><a href=\"/anular/";
                     // line 34
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["reserva"], "id", [], "any", false, false, false, 34), "html", null, true);
-                    echo "\" class=\"btn btn-primary\">Anular</a></td>
+                    echo "\" class=\"btn btn-danger\">Anular</a></td>
 \t\t\t\t\t\t\t\t\t<tr>
 \t\t\t\t\t\t\t\t";
                 }
@@ -212,7 +212,7 @@ class __TwigTemplate_1e23fe5133df7ed6f820dc9c093b72d0 extends Template
 \t\t\t\t<table class=\"table table-striped\">
 \t\t\t\t\t<thead>
 \t\t\t\t\t\t<tr>
-\t\t\t\t\t\t\t<th>Tutor</th>
+\t\t\t\t\t\t\t<th>Le atiende</th>
 \t\t\t\t\t\t\t<th>Fecha de inicio</th>
 \t\t\t\t\t\t\t<th>Hora de inicio</th>
 \t\t\t\t\t\t\t<th>Fecha de fin</th>
@@ -232,7 +232,7 @@ class __TwigTemplate_1e23fe5133df7ed6f820dc9c093b72d0 extends Template
 \t\t\t\t\t\t\t\t\t\t<td>{{ reserva.calendar.end|date('d-m-Y')}}</td>
 \t\t\t\t\t\t\t\t\t\t<td>{{ reserva.calendar.end|date('H:i:s')}}</td>
 \t\t\t\t\t\t\t\t\t\t<td>{{ reserva.calendar.servicios.Nombre}}</td>
-\t\t\t\t\t\t\t\t\t\t<td><a href=\"/anular/{{reserva.id}}\" class=\"btn btn-primary\">Anular</a></td>
+\t\t\t\t\t\t\t\t\t\t<td><a href=\"/anular/{{reserva.id}}\" class=\"btn btn-danger\">Anular</a></td>
 \t\t\t\t\t\t\t\t\t<tr>
 \t\t\t\t\t\t\t\t{% endif %}
 \t\t\t\t\t\t{% endfor %}
@@ -243,6 +243,6 @@ class __TwigTemplate_1e23fe5133df7ed6f820dc9c093b72d0 extends Template
 \t\t\t{% endif %}
 \t</div>
 {% endblock %}
-", "familia/reservas.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC-2469911dfba64533f7d3e3b79dc3f11bb4a2d310\\templates\\familia\\reservas.html.twig");
+", "familia/reservas.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC\\templates\\familia\\reservas.html.twig");
     }
 }

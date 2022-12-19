@@ -65,17 +65,11 @@ class __TwigTemplate_d4b0ad389259a61b7657e427183170cf extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
-        echo "\tSe ha anulado la reserva
+        echo "\t<div class=\"container\" id=\"exito\">
+\tSe ha anulado la reserva
+\t</div>
 \t<br>
-    <a class=\"btn btn-primary\" href=\"/familia/";
-        // line 5
-        echo twig_escape_filter($this->env, (isset($context["trabajador"]) || array_key_exists("trabajador", $context) ? $context["trabajador"] : (function () { throw new RuntimeError('Variable "trabajador" does not exist.', 5, $this->source); })()), "html", null, true);
-        echo "/";
-        echo twig_escape_filter($this->env, (isset($context["servicio"]) || array_key_exists("servicio", $context) ? $context["servicio"] : (function () { throw new RuntimeError('Variable "servicio" does not exist.', 5, $this->source); })()), "html", null, true);
-        echo "\">Volver a ";
-        echo twig_escape_filter($this->env, (isset($context["servicio"]) || array_key_exists("servicio", $context) ? $context["servicio"] : (function () { throw new RuntimeError('Variable "servicio" does not exist.', 5, $this->source); })()), "html", null, true);
-        echo "</a> 
-";
+    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -96,17 +90,19 @@ class __TwigTemplate_d4b0ad389259a61b7657e427183170cf extends Template
 
     public function getDebugInfo()
     {
-        return array (  72 => 5,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 {% block body %}
+\t<div class=\"container\" id=\"exito\">
 \tSe ha anulado la reserva
+\t</div>
 \t<br>
-    <a class=\"btn btn-primary\" href=\"/familia/{{trabajador}}/{{servicio}}\">Volver a {{servicio}}</a> 
+    {# <a class=\"btn btn-primary\" href=\"/familia/{{trabajador}}/{{servicio}}\">Volver a {{servicio}}</a>  #}
 {% endblock %}
-", "familia/anulaReserva.html.twig", "C:\\Users\\migue\\Desktop\\TFC1\\templates\\familia\\anulaReserva.html.twig");
+", "familia/anulaReserva.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC\\templates\\familia\\anulaReserva.html.twig");
     }
 }

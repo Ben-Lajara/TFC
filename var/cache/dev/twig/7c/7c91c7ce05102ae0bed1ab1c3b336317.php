@@ -87,12 +87,12 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
         ";
         // line 57
         $this->displayBlock('footer', $context, $blocks);
-        // line 85
+        // line 89
         echo "
         ";
-        // line 86
+        // line 90
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 91
+        // line 95
         echo "    </body>
 </html>
 
@@ -277,6 +277,10 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
                         <a href=\"https://twitter.com/iesjoseplanes\"><i class=\"fa fa-twitter\"></i></a>
                         <a href=\"https://www.instagram.com/ies.joseplanes_oficial\"><i class=\"fa fa-instagram\"></i></a>
                     </div>
+                    
+                    <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" /></a><br />
+                    <p>Esta obra está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.</p>
+                    
                 </div>
             </footer>
         ";
@@ -288,7 +292,7 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
 
     }
 
-    // line 86
+    // line 90
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -298,7 +302,7 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 87
+        // line 91
         echo "            <script src=\"https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js\"></script>
             <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3\" crossorigin=\"anonymous\"></script>
             <script src=\"/public/javascripts/sweetalert2.all.min.js\"></script>
@@ -323,7 +327,7 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  302 => 87,  292 => 86,  263 => 65,  257 => 61,  252 => 58,  242 => 57,  232 => 55,  222 => 54,  208 => 48,  203 => 46,  198 => 45,  192 => 43,  186 => 41,  183 => 40,  181 => 39,  169 => 29,  159 => 28,  138 => 14,  128 => 13,  109 => 6,  96 => 91,  94 => 86,  91 => 85,  89 => 57,  86 => 56,  84 => 54,  81 => 53,  79 => 28,  75 => 26,  73 => 13,  70 => 12,  67 => 11,  64 => 10,  61 => 9,  56 => 6,  49 => 1,);
+        return array (  306 => 91,  296 => 90,  263 => 65,  257 => 61,  252 => 58,  242 => 57,  232 => 55,  222 => 54,  208 => 48,  203 => 46,  198 => 45,  192 => 43,  186 => 41,  183 => 40,  181 => 39,  169 => 29,  159 => 28,  138 => 14,  128 => 13,  109 => 6,  96 => 95,  94 => 90,  91 => 89,  89 => 57,  86 => 56,  84 => 54,  81 => 53,  79 => 28,  75 => 26,  73 => 13,  70 => 12,  67 => 11,  64 => 10,  61 => 9,  56 => 6,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -409,6 +413,10 @@ class __TwigTemplate_0f5b89f45cd663306bcee28566c8f4d9 extends Template
                         <a href=\"https://twitter.com/iesjoseplanes\"><i class=\"fa fa-twitter\"></i></a>
                         <a href=\"https://www.instagram.com/ies.joseplanes_oficial\"><i class=\"fa fa-instagram\"></i></a>
                     </div>
+                    
+                    <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https://i.creativecommons.org/l/by-sa/4.0/88x31.png\" /></a><br />
+                    <p>Esta obra está bajo una <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.</p>
+                    
                 </div>
             </footer>
         {% endblock %}

@@ -96,7 +96,7 @@ class __TwigTemplate_74faf424a9b8d502d1c18ec52166d197 extends Template
         // line 20
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 20, $this->source); })()), 'form_start');
         echo "
-            <label for=\"tutor\">Elige: </label><br>
+            <label for=\"tutor\">¿Quién quieres que te atienda?</label><br>
             <div class=\"form-group col-sm-3\">
                 <select class=\"form-select\" id=\"selectTutores\" name=\"selectTutores\">
                     ";
@@ -177,7 +177,7 @@ class __TwigTemplate_74faf424a9b8d502d1c18ec52166d197 extends Template
         {# {{ form(form) }} #}
         <div class=\"container\">
         {{ form_start(form) }}
-            <label for=\"tutor\">Elige: </label><br>
+            <label for=\"tutor\">¿Quién quieres que te atienda?</label><br>
             <div class=\"form-group col-sm-3\">
                 <select class=\"form-select\" id=\"selectTutores\" name=\"selectTutores\">
                     {% for tutor in tutores %}

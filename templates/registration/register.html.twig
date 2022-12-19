@@ -59,15 +59,19 @@
 		{% block form %}
 			{{ form_start(registrationForm) }}
 			<div class="form-group col-sm-3">
-				{{ form_row(registrationForm.username) }}
+				{{ form_row(registrationForm.username, {
+                    label: 'Nombre de usuario'
+                }) }}
 			</div><br>
 			<div class="form-group col-sm-3">
 				{{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
+            label: 'Contraseña'
             }) }}
 			</div><br>
 			<div class="cb">
-			{{ form_row(registrationForm.agreeTerms) }}</div><br>
+			{{ form_row(registrationForm.agreeTerms, {
+                label: 'Acepto los términos y condiciones'
+            }) }}</div><br>
 
 			<button type="submit" class="btn btn-primary">Regístrate</button>
 			{{ form_end(registrationForm) }}

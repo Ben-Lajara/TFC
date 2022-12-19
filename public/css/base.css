@@ -202,7 +202,7 @@ footer{
 
 .footer-distributed .footer-center p a{
 	color:  #e0ac1c;
-	text-decoration: none;;
+	text-decoration: none;
 }
 
 
@@ -210,6 +210,15 @@ footer{
 
 .footer-distributed .footer-right{
 	width: 30%;
+}
+
+.footer-distributed .footer-right p{
+	color: #ffffff;
+}
+
+.footer-distributed .footer-right p a{
+	color:  #e0ac1c;
+	text-decoration: none;
 }
 
 .footer-distributed .footer-company-about{

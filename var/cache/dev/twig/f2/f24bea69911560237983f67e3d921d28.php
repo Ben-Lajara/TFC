@@ -135,7 +135,7 @@ class __TwigTemplate_787f27aeb8493c1a46c10aefe1ea48f9 extends Template
 \t\t";
         // line 59
         $this->displayBlock('form', $context, $blocks);
-        // line 75
+        // line 79
         echo "\t</div>
 ";
         
@@ -163,26 +163,28 @@ class __TwigTemplate_787f27aeb8493c1a46c10aefe1ea48f9 extends Template
 \t\t\t<div class=\"form-group col-sm-3\">
 \t\t\t\t";
         // line 62
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 62, $this->source); })()), "username", [], "any", false, false, false, 62), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 62, $this->source); })()), "username", [], "any", false, false, false, 62), 'row', ["label" => "Nombre de usuario"]);
+        // line 64
         echo "
 \t\t\t</div><br>
 \t\t\t<div class=\"form-group col-sm-3\">
 \t\t\t\t";
-        // line 65
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 65, $this->source); })()), "plainPassword", [], "any", false, false, false, 65), 'row', ["label" => "Password"]);
         // line 67
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 67, $this->source); })()), "plainPassword", [], "any", false, false, false, 67), 'row', ["label" => "Contraseña"]);
+        // line 69
         echo "
 \t\t\t</div><br>
 \t\t\t<div class=\"cb\">
 \t\t\t";
-        // line 70
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 70, $this->source); })()), "agreeTerms", [], "any", false, false, false, 70), 'row');
+        // line 72
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 72, $this->source); })()), "agreeTerms", [], "any", false, false, false, 72), 'row', ["label" => "Acepto los términos y condiciones"]);
+        // line 74
         echo "</div><br>
 
 \t\t\t<button type=\"submit\" class=\"btn btn-primary\">Regístrate</button>
 \t\t\t";
-        // line 73
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 73, $this->source); })()), 'form_end');
+        // line 77
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 77, $this->source); })()), 'form_end');
         echo "
             ";
         
@@ -205,7 +207,7 @@ class __TwigTemplate_787f27aeb8493c1a46c10aefe1ea48f9 extends Template
 
     public function getDebugInfo()
     {
-        return array (  185 => 73,  179 => 70,  174 => 67,  172 => 65,  166 => 62,  160 => 60,  150 => 59,  139 => 75,  137 => 59,  132 => 56,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  187 => 77,  182 => 74,  180 => 72,  175 => 69,  173 => 67,  168 => 64,  166 => 62,  160 => 60,  150 => 59,  139 => 79,  137 => 59,  132 => 56,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -271,21 +273,25 @@ class __TwigTemplate_787f27aeb8493c1a46c10aefe1ea48f9 extends Template
 \t\t{% block form %}
 \t\t\t{{ form_start(registrationForm) }}
 \t\t\t<div class=\"form-group col-sm-3\">
-\t\t\t\t{{ form_row(registrationForm.username) }}
+\t\t\t\t{{ form_row(registrationForm.username, {
+                    label: 'Nombre de usuario'
+                }) }}
 \t\t\t</div><br>
 \t\t\t<div class=\"form-group col-sm-3\">
 \t\t\t\t{{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
+            label: 'Contraseña'
             }) }}
 \t\t\t</div><br>
 \t\t\t<div class=\"cb\">
-\t\t\t{{ form_row(registrationForm.agreeTerms) }}</div><br>
+\t\t\t{{ form_row(registrationForm.agreeTerms, {
+                label: 'Acepto los términos y condiciones'
+            }) }}</div><br>
 
 \t\t\t<button type=\"submit\" class=\"btn btn-primary\">Regístrate</button>
 \t\t\t{{ form_end(registrationForm) }}
             {% endblock %}
 \t</div>
 {% endblock %}
-", "registration/register.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC-2469911dfba64533f7d3e3b79dc3f11bb4a2d310\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\xampp\\htdocs\\symfony\\updatedTFC\\TFC\\templates\\registration\\register.html.twig");
     }
 }
